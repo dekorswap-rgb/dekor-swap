@@ -36,26 +36,26 @@ export default function Navbar() {
         scrolled ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent"
       )}
     >
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative w-10 h-10 transition-transform group-hover:scale-110">
-                <Image 
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/8c7b33be-37df-4a52-ae5e-d0f22cc7ae10/D2-1769327260618.png?width=8000&height=8000&resize=contain"
-                  alt="DekorSwap Logo"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-primary leading-none">
-                  DekorSwap
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-semibold mt-1">
-                  Endless Style
-                </span>
-              </div>
-            </Link>
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="relative w-10 h-10 transition-transform group-hover:scale-110">
+            <Image
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/8c7b33be-37df-4a52-ae5e-d0f22cc7ae10/D2-1769327260618.png?width=8000&height=8000&resize=contain"
+              alt="DekorSwap Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xl font-bold tracking-tight text-primary leading-none">
+              DekorSwap
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-semibold mt-1">
+              Endless Style
+            </span>
+          </div>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -71,9 +71,11 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button size="sm" className="rounded-full px-6 bg-primary hover:bg-brand-charcoal/90">
-            Get Started
-          </Button>
+          <Link href="/get-started">
+            <Button size="sm" className="rounded-full px-6 bg-primary hover:bg-brand-charcoal/90">
+              Get Started
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -107,9 +109,11 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button className="w-full mt-2 rounded-full bg-primary">
-              Get Started <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <Link href="/get-started" onClick={() => setIsOpen(false)}>
+              <Button className="w-full mt-2 rounded-full bg-primary">
+                Get Started <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

@@ -27,7 +27,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center pt-20 px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             initial="initial"
             animate="animate"
             variants={stagger}
@@ -38,47 +38,49 @@ export default function Home() {
                 New: Winter Collection 2026
               </Badge>
             </motion.div>
-            <motion.h1 
+            <motion.h1
               variants={fadeIn}
               className="text-5xl md:text-7xl font-bold leading-[1.1] text-primary mb-6"
             >
               Swap your décor,<br />
               <span className="text-accent italic">Endless Style.</span>
             </motion.h1>
-            <motion.p 
+            <motion.p
               variants={fadeIn}
               className="text-lg md:text-xl text-muted-foreground mb-10 max-w-lg leading-relaxed"
             >
               Curated home décor delivered monthly. Rotate items. No commitment. No clutter. Just pure style, tailored to you.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="rounded-full px-8 h-14 text-lg bg-primary group">
-                Get Started 
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link href="/get-started">
+                <Button size="lg" className="rounded-full px-8 h-14 text-lg bg-primary group">
+                  Get Started
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="rounded-full px-8 h-14 text-lg border-primary/20 hover:bg-primary/5">
                 How It Works
               </Button>
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="relative"
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1000" 
-                alt="Scandinavian Interior" 
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1000"
+                alt="Scandinavian Interior"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
-            
+
             {/* Floating Elements */}
-            <motion.div 
+            <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-border flex items-center gap-3 z-20"
@@ -92,7 +94,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               className="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-lg border border-border flex items-center gap-3 z-20"
@@ -137,7 +139,7 @@ export default function Home() {
                 desc: "Love it? Keep it another month. Bored? Swap it for something new."
               }
             ].map((step, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -10 }}
                 className="flex flex-col items-center text-center p-8 rounded-2xl bg-brand-offwhite/50 border border-transparent hover:border-accent/10 transition-all"
@@ -170,28 +172,28 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { 
+              {
                 img: "https://images.unsplash.com/photo-1581781870027-04212e231e96?auto=format&fit=crop&q=80&w=600",
                 tag: "Vases",
                 name: "Ceramic Ribbed Vase"
               },
-              { 
+              {
                 img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=600",
                 tag: "Lighting",
                 name: "Nordic Desk Lamp"
               },
-              { 
+              {
                 img: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&q=80&w=600",
                 tag: "Plants",
                 name: "Tapered Clay Planter"
               },
-              { 
+              {
                 img: "https://images.unsplash.com/photo-1513519247388-193ad51f50ab?auto=format&fit=crop&q=80&w=600",
                 tag: "Art",
                 name: "Minimalist Line Art"
               }
             ].map((item, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -200,9 +202,9 @@ export default function Home() {
                 className="group cursor-pointer"
               >
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden mb-4 relative">
-                  <img 
-                    src={item.img} 
-                    alt={item.name} 
+                  <img
+                    src={item.img}
+                    alt={item.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute top-4 left-4">
@@ -225,7 +227,7 @@ export default function Home() {
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent rounded-full blur-[120px]" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent rounded-full blur-[120px]" />
         </div>
-        
+
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
             Stop buying clutter. <br />
@@ -246,7 +248,7 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-          
+
           <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 opacity-50">
             <div className="flex items-center gap-2">
               <Check className="text-accent" />
@@ -272,9 +274,9 @@ export default function Home() {
             Subscribe to our newsletter for home styling tips and be the first to know about new collections.
           </p>
           <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="Your email address" 
+            <input
+              type="email"
+              placeholder="Your email address"
               className="flex-grow px-6 py-4 rounded-full border border-border focus:outline-none focus:ring-2 focus:ring-accent bg-white"
             />
             <Button size="lg" className="rounded-full px-8 bg-primary">
