@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#2c2c2c"/>
+  
+  <!-- Decorative accent circle -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#d4745e" stroke-width="3" opacity="0.3"/>
+  
+  <!-- Main "D" letter with home/swap concept -->
+  <path d="M180 160 L180 352 L280 352 C330 352 360 322 360 256 C360 190 330 160 280 160 Z" fill="#d4745e"/>
+  <path d="M220 200 L220 312 L280 312 C310 312 320 292 320 256 C320 220 310 200 280 200 Z" fill="#2c2c2c"/>
+  
+  <!-- Swap arrows integrated into design -->
+  <path d="M340 220 L360 220 L350 210 M340 292 L360 292 L350 302" stroke="#d4745e" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Subtle home roof accent -->
+  <path d="M256 140 L220 170 L292 170 Z" fill="#d4745e" opacity="0.6"/>
+</svg>

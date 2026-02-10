@@ -9,6 +9,14 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "DekorSwap | Endless style",
   description: "Premium home décor subscription service. Curated items delivered monthly.",
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.svg', type: 'image/svg+xml' },
+    ],
+  },
 };
 
 export default function RootLayout({

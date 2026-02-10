@@ -1,0 +1,11 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#2c2c2c"/>
+  
+  <!-- "D" monogram for Apple touch icon -->
+  <path d="M50 45 L50 135 L100 135 C125 135 140 120 140 90 C140 60 125 45 100 45 Z" fill="#d4745e"/>
+  <path d="M65 60 L65 120 L100 120 C115 120 125 110 125 90 C125 70 115 60 100 60 Z" fill="#2c2c2c"/>
+  
+  <!-- Decorative accent -->
+  <circle cx="90" cy="90" r="75" fill="none" stroke="#d4745e" stroke-width="2" opacity="0.2"/>
+</svg>
