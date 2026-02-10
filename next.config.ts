@@ -64,11 +64,10 @@ const nextConfig: NextConfig = {
   // Produce a static export when running `next build`.
   // This replaces the removed `next export` CLI in Next 15+.
   output: 'export',
-  // If you plan to host the static export at a repository path
-  // set `basePath` and `assetPrefix` to the repo name, e.g. '/dekor-swap'.
-  // Leave commented unless you host under username.github.io/REPO_NAME
-  // basePath: '/REPO_NAME',
-  // assetPrefix: '/REPO_NAME/',
+  // GitHub Pages deployment configuration
+  // Set basePath and assetPrefix to the repository name for proper routing
+  basePath: '/dekor-swap',
+  assetPrefix: '/dekor-swap/',
   trailingSlash: true
 };
 
