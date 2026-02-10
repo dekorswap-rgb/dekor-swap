@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center gap-2 mb-6 group">
             <div className="relative w-10 h-10 transition-transform group-hover:scale-110">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="DekorSwap Logo"
                 fill
                 className="object-contain"
