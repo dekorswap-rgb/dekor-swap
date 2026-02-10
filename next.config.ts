@@ -65,10 +65,10 @@ const nextConfig: NextConfig = {
   // This replaces the removed `next export` CLI in Next 15+.
   output: 'export',
   // GitHub Pages deployment configuration
-  // Only set basePath in production to avoid breaking local dev server
+  // basePath and assetPrefix must match exactly (no trailing slash on assetPrefix)
   ...(process.env.NODE_ENV === 'production' ? {
     basePath: '/dekor-swap',
-    assetPrefix: '/dekor-swap/',
+    assetPrefix: '/dekor-swap',
   } : {}),
   trailingSlash: true
 };
