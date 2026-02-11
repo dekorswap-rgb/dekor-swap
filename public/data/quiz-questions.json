@@ -1,0 +1,406 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "single-choice",
+            "question": "Which room are you styling?",
+            "emoji": "🏠",
+            "image": null,
+            "options": [
+                {
+                    "id": "living-room",
+                    "label": "Living Room",
+                    "emoji": "🛋️",
+                    "nextQuestion": "q2"
+                },
+                {
+                    "id": "bedroom",
+                    "label": "Bedroom",
+                    "emoji": "🛏️",
+                    "nextQuestion": "q2"
+                },
+                {
+                    "id": "home-office",
+                    "label": "Home Office",
+                    "emoji": "💼",
+                    "nextQuestion": "q2"
+                },
+                {
+                    "id": "dining-room",
+                    "label": "Dining Room",
+                    "emoji": "🍽️",
+                    "nextQuestion": "q2"
+                }
+            ]
+        },
+        {
+            "id": "q2",
+            "type": "single-choice",
+            "question": "What feeling do you want your space to evoke?",
+            "emoji": "✨",
+            "image": null,
+            "options": [
+                {
+                    "id": "serene-calm",
+                    "label": "Serene & Calm",
+                    "emoji": "🧘",
+                    "description": "Peaceful, uncluttered, zen-like atmosphere",
+                    "nextQuestion": "q3",
+                    "styleWeights": {
+                        "japandi": 3,
+                        "scandinavian": 3,
+                        "minimalist": 3
+                    }
+                },
+                {
+                    "id": "warm-cozy",
+                    "label": "Warm & Cozy",
+                    "emoji": "🔥",
+                    "description": "Inviting, comfortable, homey vibes",
+                    "nextQuestion": "q3",
+                    "styleWeights": {
+                        "modern-farmhouse": 3,
+                        "bohemian": 2,
+                        "scandinavian": 1
+                    }
+                },
+                {
+                    "id": "bold-vibrant",
+                    "label": "Bold & Vibrant",
+                    "emoji": "🎨",
+                    "description": "Energetic, eclectic, full of character",
+                    "nextQuestion": "q3",
+                    "styleWeights": {
+                        "bohemian": 3,
+                        "mid-century": 2,
+                        "industrial": 1
+                    }
+                },
+                {
+                    "id": "sleek-modern",
+                    "label": "Sleek & Modern",
+                    "emoji": "⚡",
+                    "description": "Contemporary, sophisticated, clean lines",
+                    "nextQuestion": "q3",
+                    "styleWeights": {
+                        "minimalist": 3,
+                        "industrial": 2,
+                        "mid-century": 2
+                    }
+                }
+            ]
+        },
+        {
+            "id": "q3",
+            "type": "single-choice",
+            "question": "Which color palette speaks to you?",
+            "emoji": "🎨",
+            "image": null,
+            "options": [
+                {
+                    "id": "neutral-natural",
+                    "label": "Neutral & Natural",
+                    "emoji": "🤍",
+                    "description": "Whites, beiges, soft grays, natural wood",
+                    "imageUrl": "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&h=300&fit=crop",
+                    "nextQuestion": "q4",
+                    "styleWeights": {
+                        "japandi": 3,
+                        "scandinavian": 3,
+                        "minimalist": 2
+                    }
+                },
+                {
+                    "id": "earthy-warm",
+                    "label": "Earthy & Warm",
+                    "emoji": "🧡",
+                    "description": "Terracotta, burnt orange, olive green, browns",
+                    "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&h=300&fit=crop",
+                    "nextQuestion": "q4",
+                    "styleWeights": {
+                        "bohemian": 3,
+                        "modern-farmhouse": 2,
+                        "mid-century": 2
+                    }
+                },
+                {
+                    "id": "bold-colorful",
+                    "label": "Bold & Colorful",
+                    "emoji": "🌈",
+                    "description": "Jewel tones, deep blues, emerald greens",
+                    "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
+                    "nextQuestion": "q4",
+                    "styleWeights": {
+                        "bohemian": 3,
+                        "mid-century": 2
+                    }
+                },
+                {
+                    "id": "monochrome",
+                    "label": "Monochrome",
+                    "emoji": "⚫",
+                    "description": "Black, white, grays with minimal color",
+                    "imageUrl": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop",
+                    "nextQuestion": "q4",
+                    "styleWeights": {
+                        "minimalist": 3,
+                        "industrial": 3
+                    }
+                }
+            ]
+        },
+        {
+            "id": "q4",
+            "type": "single-choice",
+            "question": "How would you describe your lifestyle?",
+            "emoji": "🌟",
+            "image": null,
+            "options": [
+                {
+                    "id": "minimalist-lifestyle",
+                    "label": "Minimalist",
+                    "emoji": "✨",
+                    "description": "I prefer fewer items, everything has a purpose",
+                    "nextQuestion": "q5",
+                    "styleWeights": {
+                        "minimalist": 3,
+                        "japandi": 2,
+                        "scandinavian": 1
+                    }
+                },
+                {
+                    "id": "collector",
+                    "label": "Collector",
+                    "emoji": "🎁",
+                    "description": "I love unique pieces and surrounding myself with treasures",
+                    "nextQuestion": "q5",
+                    "styleWeights": {
+                        "bohemian": 3,
+                        "mid-century": 1
+                    }
+                },
+                {
+                    "id": "entertainer",
+                    "label": "Entertainer",
+                    "emoji": "🎉",
+                    "description": "I host friends and family often",
+                    "nextQuestion": "q5",
+                    "styleWeights": {
+                        "modern-farmhouse": 2,
+                        "mid-century": 2,
+                        "bohemian": 1
+                    }
+                },
+                {
+                    "id": "homebody",
+                    "label": "Homebody",
+                    "emoji": "☕",
+                    "description": "I prioritize comfort and relaxation",
+                    "nextQuestion": "q5",
+                    "styleWeights": {
+                        "scandinavian": 3,
+                        "modern-farmhouse": 2,
+                        "japandi": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "q5",
+            "type": "single-choice",
+            "question": "What materials do you gravitate towards?",
+            "emoji": "🪵",
+            "image": null,
+            "options": [
+                {
+                    "id": "natural-organic",
+                    "label": "Natural & Organic",
+                    "emoji": "🌿",
+                    "description": "Wood, rattan, linen, ceramics",
+                    "imageUrl": "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=400&h=300&fit=crop",
+                    "nextQuestion": "result",
+                    "styleWeights": {
+                        "japandi": 3,
+                        "scandinavian": 3,
+                        "bohemian": 2,
+                        "modern-farmhouse": 2
+                    }
+                },
+                {
+                    "id": "sleek-modern",
+                    "label": "Sleek & Modern",
+                    "emoji": "💎",
+                    "description": "Glass, metal, concrete, leather",
+                    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=400&h=300&fit=crop",
+                    "nextQuestion": "result",
+                    "styleWeights": {
+                        "minimalist": 3,
+                        "industrial": 3,
+                        "mid-century": 1
+                    }
+                },
+                {
+                    "id": "rich-textured",
+                    "label": "Rich & Textured",
+                    "emoji": "🧶",
+                    "description": "Velvet, boucle, woven textiles, layered fabrics",
+                    "imageUrl": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=400&h=300&fit=crop",
+                    "nextQuestion": "result",
+                    "styleWeights": {
+                        "bohemian": 3,
+                        "mid-century": 2,
+                        "modern-farmhouse": 1
+                    }
+                },
+                {
+                    "id": "mixed-eclectic",
+                    "label": "Mixed & Eclectic",
+                    "emoji": "🎭",
+                    "description": "A combination of different textures and materials",
+                    "imageUrl": "https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=400&h=300&fit=crop",
+                    "nextQuestion": "result",
+                    "styleWeights": {
+                        "bohemian": 3,
+                        "mid-century": 2,
+                        "industrial": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "styles": {
+        "japandi": {
+            "name": "Japandi",
+            "tagline": "Zen Meets Hygge",
+            "description": "A harmonious blend of Japanese minimalism and Scandinavian warmth. Clean lines, natural materials, and a calm, uncluttered aesthetic create a serene sanctuary.",
+            "characteristics": [
+                "Muted earth tones (greige, sand, warm whites)",
+                "Natural materials (wood, linen, ceramics, bamboo)",
+                "Low-profile, functional furniture",
+                "Emphasis on negative space and mindfulness",
+                "Wabi-sabi philosophy (beauty in imperfection)"
+            ],
+            "colorPalette": [
+                "#E8E4DC",
+                "#C9B8A8",
+                "#8B7E74",
+                "#4A4238"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&h=600&fit=crop"
+        },
+        "mid-century": {
+            "name": "Mid-Century Modern",
+            "tagline": "Timeless Retro Charm",
+            "description": "Inspired by 1940s-1960s design, this style features clean lines, organic shapes, and a blend of functionality with artistic flair. Warm woods and earthy tones create inviting spaces.",
+            "characteristics": [
+                "Tapered legs and streamlined furniture",
+                "Walnut and teak wood finishes",
+                "Earthy colors (burnt orange, olive, smoky blue)",
+                "Geometric patterns and bold accents",
+                "Mix of vintage and modern pieces"
+            ],
+            "colorPalette": [
+                "#D4745E",
+                "#8B6F47",
+                "#5B7C6E",
+                "#2C2C2C"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop"
+        },
+        "scandinavian": {
+            "name": "Scandinavian (Warm Minimalism)",
+            "tagline": "Light, Airy, & Cozy",
+            "description": "Rooted in simplicity and functionality, Scandinavian design maximizes natural light with soft neutrals, natural materials, and cozy textiles for a warm, lived-in feel.",
+            "characteristics": [
+                "Soft neutral palette (whites, beiges, soft grays)",
+                "Natural materials (light wood, wool, linen)",
+                "Functional, minimalist furniture",
+                "Layered textures for warmth",
+                "Focus on natural light and open spaces"
+            ],
+            "colorPalette": [
+                "#F5F5F0",
+                "#D9CFC1",
+                "#A8998F",
+                "#6B6B6B"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop"
+        },
+        "bohemian": {
+            "name": "Bohemian",
+            "tagline": "Free-Spirited & Eclectic",
+            "description": "A vibrant, artistic style that celebrates global influences, rich textures, and personal expression. Mix patterns, colors, and unique finds for a soulful, lived-in space.",
+            "characteristics": [
+                "Rich jewel tones and earthy accents",
+                "Layered textiles (rugs, throws, cushions)",
+                "Global patterns and handmade items",
+                "Mix of vintage and artisan pieces",
+                "Abundance of plants and natural elements"
+            ],
+            "colorPalette": [
+                "#C97D60",
+                "#8B4F3D",
+                "#5A7D5F",
+                "#E8C547"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=600&fit=crop"
+        },
+        "minimalist": {
+            "name": "Minimalist",
+            "tagline": "Soulful Simplicity",
+            "description": "Less is more. This style prioritizes quality over quantity, with carefully curated pieces, clean lines, and a focus on functionality and negative space.",
+            "characteristics": [
+                "Neutral color palette with subtle accents",
+                "Clean architectural lines",
+                "High-quality, purposeful pieces",
+                "Emphasis on negative space",
+                "Sculptural, functional furniture"
+            ],
+            "colorPalette": [
+                "#FFFFFF",
+                "#E5E5E5",
+                "#9E9E9E",
+                "#2C2C2C"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop"
+        },
+        "modern-farmhouse": {
+            "name": "Modern Farmhouse",
+            "tagline": "Rustic Meets Contemporary",
+            "description": "A cozy blend of rustic charm and modern simplicity. Natural wood, neutral tones, and comfortable furnishings create a welcoming, down-to-earth atmosphere.",
+            "characteristics": [
+                "Neutral palette with warm wood tones",
+                "Shiplap, reclaimed wood, natural textures",
+                "Mix of rustic and modern elements",
+                "Comfortable, durable furniture",
+                "Farmhouse-inspired accents (metal, vintage finds)"
+            ],
+            "colorPalette": [
+                "#F5F1E8",
+                "#C9B8A3",
+                "#8B7355",
+                "#4A4238"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&h=600&fit=crop"
+        },
+        "industrial": {
+            "name": "Industrial",
+            "tagline": "Raw & Urban Edge",
+            "description": "Inspired by warehouses and lofts, this style features exposed materials, raw textures, and utilitarian furniture. A bold, edgy aesthetic with character.",
+            "characteristics": [
+                "Exposed brick, concrete, metal",
+                "Raw, unfinished materials",
+                "Neutral palette with metallic accents",
+                "Utilitarian, pared-back furniture",
+                "Open, loft-like spaces"
+            ],
+            "colorPalette": [
+                "#3E3E3E",
+                "#7A7A7A",
+                "#A8998F",
+                "#D4745E"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop"
+        }
+    }
+}

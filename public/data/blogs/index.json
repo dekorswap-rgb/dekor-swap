@@ -1,0 +1,24 @@
+{
+    "blogs": [
+        {
+            "id": "blog-001",
+            "slug": "japandi-living-room-styling",
+            "featured": true
+        },
+        {
+            "id": "blog-002",
+            "slug": "sustainable-decor-tips",
+            "featured": true
+        },
+        {
+            "id": "blog-003",
+            "slug": "mid-century-modern-comeback",
+            "featured": false
+        },
+        {
+            "id": "blog-004",
+            "slug": "seasonal-decor-winter-2026",
+            "featured": false
+        }
+    ]
+}

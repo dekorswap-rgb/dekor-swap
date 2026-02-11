@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Check, RefreshCw, Box, Smile } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SustainabilityImpact from "@/components/SustainabilityImpact";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },

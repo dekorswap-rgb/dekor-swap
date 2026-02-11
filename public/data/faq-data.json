@@ -1,0 +1,139 @@
+{
+    "categories": [
+        {
+            "id": "getting-started",
+            "name": "Getting Started",
+            "emoji": "🚀",
+            "questions": [
+                {
+                    "id": "faq-001",
+                    "question": "How does the DekorSwap subscription work?",
+                    "answer": "DekorSwap is a monthly subscription service that delivers curated home décor items to your door. Choose your plan, take our style quiz, and receive a box of hand-picked items each month. Swap them out whenever you're ready for something new!"
+                },
+                {
+                    "id": "faq-002",
+                    "question": "What's included in each plan?",
+                    "answer": "Our **Standard Plan** ($49/month) includes 3-5 curated items with 2 swaps per month. The **Premium Plan** ($89/month) includes 6-8 items with unlimited swaps. Both plans include free shipping, eco-friendly packaging, and access to our full catalog."
+                },
+                {
+                    "id": "faq-003",
+                    "question": "How do I sign up?",
+                    "answer": "Simply click 'Get Started', take our 2-minute style quiz, choose your plan, and enter your shipping details. Your first box will arrive within 5-7 business days!"
+                },
+                {
+                    "id": "faq-004",
+                    "question": "Can I choose my items?",
+                    "answer": "Yes! After taking our style quiz, you'll receive personalized recommendations. You can browse our catalog and select items that match your preferences, or let our designers surprise you with curated selections."
+                }
+            ]
+        },
+        {
+            "id": "swapping-logistics",
+            "name": "Swapping & Logistics",
+            "emoji": "🔄",
+            "questions": [
+                {
+                    "id": "faq-005",
+                    "question": "How often can I swap items?",
+                    "answer": "Standard Plan members can swap items twice per month. Premium Plan members enjoy unlimited swaps! Simply schedule your swap through your account dashboard, and we'll send you a prepaid return label."
+                },
+                {
+                    "id": "faq-006",
+                    "question": "How does the swap process work?",
+                    "answer": "When you're ready to swap, log into your dashboard and select 'Schedule Swap'. Pack your current items in the original box (or any box), attach the prepaid label we email you, and drop it off at any shipping location. Your new items will arrive within 5-7 days!"
+                },
+                {
+                    "id": "faq-007",
+                    "question": "What if I want to keep an item longer?",
+                    "answer": "No problem! You can keep items as long as you'd like. Your subscription continues, and you can swap items on your own schedule. Some members keep favorites for months!"
+                },
+                {
+                    "id": "faq-008",
+                    "question": "Can I purchase items I love?",
+                    "answer": "Absolutely! If you fall in love with an item, you can purchase it at a discounted member price (typically 20-30% off retail). Just click 'Buy This Item' in your dashboard."
+                },
+                {
+                    "id": "faq-009",
+                    "question": "What areas do you deliver to?",
+                    "answer": "We currently deliver to all 50 US states. International shipping is coming soon! Enter your zip code during signup to confirm availability."
+                }
+            ]
+        },
+        {
+            "id": "damage-care",
+            "name": "Damage & Care",
+            "emoji": "🛡️",
+            "questions": [
+                {
+                    "id": "faq-010",
+                    "question": "What if something breaks or gets damaged?",
+                    "answer": "We understand accidents happen! Normal wear and tear is expected and covered. For significant damage, we have a simple damage waiver: up to $50 per incident for Standard Plan, $100 for Premium Plan. We'll work with you to find a fair solution."
+                },
+                {
+                    "id": "faq-011",
+                    "question": "How should I clean and care for items?",
+                    "answer": "Each item comes with care instructions. Generally: dust ceramics and wood with a soft cloth, spot-clean textiles, and avoid harsh chemicals. Treat items as you would your own furniture—with reasonable care!"
+                },
+                {
+                    "id": "faq-012",
+                    "question": "Are items sanitized between swaps?",
+                    "answer": "Yes! Every item is professionally cleaned, inspected, and sanitized before being sent to the next member. We follow strict quality control standards to ensure items arrive in excellent condition."
+                }
+            ]
+        },
+        {
+            "id": "billing-cancellation",
+            "name": "Billing & Cancellation",
+            "emoji": "💳",
+            "questions": [
+                {
+                    "id": "faq-013",
+                    "question": "How does billing work?",
+                    "answer": "You'll be charged monthly on the date you signed up. We accept all major credit cards and PayPal. You can update your payment method anytime in your account settings."
+                },
+                {
+                    "id": "faq-014",
+                    "question": "Can I cancel anytime?",
+                    "answer": "Yes! There are no long-term contracts. You can cancel anytime from your account dashboard. Just return your current items, and you won't be charged for the next month."
+                },
+                {
+                    "id": "faq-015",
+                    "question": "What's your refund policy?",
+                    "answer": "If you cancel within the first 14 days and return all items in original condition, we'll provide a full refund. After 14 days, we don't offer refunds, but you can cancel anytime to avoid future charges."
+                },
+                {
+                    "id": "faq-016",
+                    "question": "Can I pause my subscription?",
+                    "answer": "Yes! You can pause your subscription for up to 3 months. This is perfect if you're traveling or moving. Just keep your current items, and we'll resume when you're ready."
+                }
+            ]
+        },
+        {
+            "id": "sustainability",
+            "name": "Sustainability",
+            "emoji": "🌱",
+            "questions": [
+                {
+                    "id": "faq-017",
+                    "question": "How are items cleaned and refurbished?",
+                    "answer": "We partner with local cleaning and refurbishment specialists who use eco-friendly products. Items are inspected, cleaned, and repaired if needed. Our goal is to keep items in circulation for years!"
+                },
+                {
+                    "id": "faq-018",
+                    "question": "What happens to damaged items that can't be reused?",
+                    "answer": "Items that reach the end of their lifecycle are responsibly recycled or donated to local charities. We work with recycling partners to ensure materials are properly processed, not sent to landfills."
+                },
+                {
+                    "id": "faq-019",
+                    "question": "Is your packaging sustainable?",
+                    "answer": "100% yes! We use recycled cardboard boxes, biodegradable packing peanuts made from cornstarch, and recycled paper padding. All packaging materials are recyclable or compostable."
+                },
+                {
+                    "id": "faq-020",
+                    "question": "How does DekorSwap reduce environmental impact?",
+                    "answer": "By keeping items in circulation instead of producing new ones, we significantly reduce resource extraction, manufacturing emissions, and landfill waste. One swapped item can serve 10+ households over its lifetime!"
+                }
+            ]
+        }
+    ]
+}

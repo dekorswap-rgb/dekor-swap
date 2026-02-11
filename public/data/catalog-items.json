@@ -1,0 +1,478 @@
+{
+    "items": [
+        {
+            "id": "item-001",
+            "name": "Ceramic Vase - Terracotta",
+            "category": "vases",
+            "styles": [
+                "japandi",
+                "scandinavian",
+                "minimalist",
+                "modern-farmhouse"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom",
+                "dining-room"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=600&h=600&fit=crop",
+            "description": "Handcrafted ceramic vase with organic shape and warm terracotta finish. Perfect for dried flowers or as a standalone statement piece.",
+            "availability": "available",
+            "tags": [
+                "ceramic",
+                "handmade",
+                "sustainable",
+                "organic-shape"
+            ]
+        },
+        {
+            "id": "item-002",
+            "name": "Mid-Century Table Lamp",
+            "category": "lighting",
+            "styles": [
+                "mid-century",
+                "scandinavian"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom",
+                "home-office"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=600&fit=crop",
+            "description": "Walnut wood base with brass accents and linen shade. Tapered legs and timeless design bring retro charm to any space.",
+            "availability": "available",
+            "tags": [
+                "wood",
+                "brass",
+                "vintage-inspired",
+                "functional"
+            ]
+        },
+        {
+            "id": "item-003",
+            "name": "Woven Rattan Planter",
+            "category": "planters",
+            "styles": [
+                "bohemian",
+                "scandinavian",
+                "modern-farmhouse"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom",
+                "dining-room"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&h=600&fit=crop",
+            "description": "Natural rattan planter with removable liner. Adds texture and warmth while supporting your favorite greenery.",
+            "availability": "available",
+            "tags": [
+                "rattan",
+                "natural",
+                "sustainable",
+                "boho"
+            ]
+        },
+        {
+            "id": "item-004",
+            "name": "Abstract Canvas Art - Neutral",
+            "category": "wall-art",
+            "styles": [
+                "minimalist",
+                "japandi",
+                "scandinavian"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom",
+                "home-office"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=600&h=600&fit=crop",
+            "description": "Large abstract canvas in muted earth tones. Adds visual interest without overwhelming the space.",
+            "availability": "available",
+            "tags": [
+                "art",
+                "canvas",
+                "abstract",
+                "neutral"
+            ]
+        },
+        {
+            "id": "item-005",
+            "name": "Industrial Metal Bookend Set",
+            "category": "accessories",
+            "styles": [
+                "industrial",
+                "minimalist",
+                "mid-century"
+            ],
+            "rooms": [
+                "home-office",
+                "living-room"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&h=600&fit=crop",
+            "description": "Raw steel bookends with matte black finish. Functional and sculptural, perfect for modern spaces.",
+            "availability": "available",
+            "tags": [
+                "metal",
+                "functional",
+                "industrial",
+                "modern"
+            ]
+        },
+        {
+            "id": "item-006",
+            "name": "Velvet Throw Pillow - Emerald",
+            "category": "textiles",
+            "styles": [
+                "bohemian",
+                "mid-century"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=600&h=600&fit=crop",
+            "description": "Luxurious velvet pillow in rich emerald green. Adds a pop of color and tactile depth to sofas and beds.",
+            "availability": "available",
+            "tags": [
+                "velvet",
+                "textiles",
+                "jewel-tone",
+                "soft"
+            ]
+        },
+        {
+            "id": "item-007",
+            "name": "Bamboo Tray - Natural",
+            "category": "accessories",
+            "styles": [
+                "japandi",
+                "scandinavian",
+                "minimalist"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom",
+                "dining-room"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1565183928294-7d22f2d8d7b5?w=600&h=600&fit=crop",
+            "description": "Sustainable bamboo serving tray with handles. Perfect for coffee table styling or breakfast in bed.",
+            "availability": "available",
+            "tags": [
+                "bamboo",
+                "sustainable",
+                "functional",
+                "natural"
+            ]
+        },
+        {
+            "id": "item-008",
+            "name": "Geometric Wall Mirror - Brass",
+            "category": "mirrors",
+            "styles": [
+                "mid-century",
+                "bohemian",
+                "modern-farmhouse"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom",
+                "dining-room"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=600&fit=crop",
+            "description": "Hexagonal mirror with brass frame. Reflects light beautifully while adding geometric interest.",
+            "availability": "available",
+            "tags": [
+                "mirror",
+                "brass",
+                "geometric",
+                "statement"
+            ]
+        },
+        {
+            "id": "item-009",
+            "name": "Concrete Planter - Small",
+            "category": "planters",
+            "styles": [
+                "industrial",
+                "minimalist",
+                "scandinavian"
+            ],
+            "rooms": [
+                "home-office",
+                "living-room",
+                "bedroom"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=600&h=600&fit=crop",
+            "description": "Hand-poured concrete planter with drainage hole. Modern and durable, perfect for succulents.",
+            "availability": "available",
+            "tags": [
+                "concrete",
+                "modern",
+                "handmade",
+                "minimalist"
+            ]
+        },
+        {
+            "id": "item-010",
+            "name": "Woven Wall Hanging - Macrame",
+            "category": "wall-art",
+            "styles": [
+                "bohemian",
+                "modern-farmhouse"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1595814433015-e7cd7a3e3d88?w=600&h=600&fit=crop",
+            "description": "Handwoven macrame wall hanging in natural cotton. Adds texture and bohemian charm to any wall.",
+            "availability": "available",
+            "tags": [
+                "macrame",
+                "handmade",
+                "textiles",
+                "boho"
+            ]
+        },
+        {
+            "id": "item-011",
+            "name": "Ceramic Bowl Set - Matte Black",
+            "category": "accessories",
+            "styles": [
+                "minimalist",
+                "industrial",
+                "japandi"
+            ],
+            "rooms": [
+                "dining-room",
+                "living-room"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=600&fit=crop",
+            "description": "Set of three nesting bowls in matte black ceramic. Functional and sculptural for display or use.",
+            "availability": "available",
+            "tags": [
+                "ceramic",
+                "functional",
+                "modern",
+                "set"
+            ]
+        },
+        {
+            "id": "item-012",
+            "name": "Vintage-Style Desk Lamp",
+            "category": "lighting",
+            "styles": [
+                "industrial",
+                "mid-century"
+            ],
+            "rooms": [
+                "home-office",
+                "bedroom"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=600&h=600&fit=crop",
+            "description": "Adjustable arm desk lamp with aged brass finish. Perfect task lighting with vintage character.",
+            "availability": "coming-soon",
+            "tags": [
+                "brass",
+                "vintage",
+                "functional",
+                "adjustable"
+            ]
+        },
+        {
+            "id": "item-013",
+            "name": "Linen Throw Blanket - Oatmeal",
+            "category": "textiles",
+            "styles": [
+                "scandinavian",
+                "japandi",
+                "modern-farmhouse"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&h=600&fit=crop",
+            "description": "Pure linen throw in soft oatmeal color. Lightweight yet cozy, perfect for layering.",
+            "availability": "available",
+            "tags": [
+                "linen",
+                "natural",
+                "soft",
+                "sustainable"
+            ]
+        },
+        {
+            "id": "item-014",
+            "name": "Sculptural Candle Holder - White",
+            "category": "accessories",
+            "styles": [
+                "minimalist",
+                "scandinavian",
+                "japandi"
+            ],
+            "rooms": [
+                "living-room",
+                "dining-room",
+                "bedroom"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1602874801006-96632be89a5a?w=600&h=600&fit=crop",
+            "description": "Organic-shaped ceramic candle holder. Doubles as art when not in use.",
+            "availability": "available",
+            "tags": [
+                "ceramic",
+                "sculptural",
+                "minimalist",
+                "functional"
+            ]
+        },
+        {
+            "id": "item-015",
+            "name": "Patterned Rug Runner - Geometric",
+            "category": "rugs",
+            "styles": [
+                "bohemian",
+                "mid-century"
+            ],
+            "rooms": [
+                "living-room",
+                "bedroom",
+                "home-office"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=600&h=600&fit=crop",
+            "description": "Hand-tufted wool runner with geometric pattern in warm tones. Adds visual interest and comfort.",
+            "availability": "coming-soon",
+            "tags": [
+                "wool",
+                "handmade",
+                "geometric",
+                "warm"
+            ]
+        },
+        {
+            "id": "item-016",
+            "name": "Glass Vase - Amber",
+            "category": "vases",
+            "styles": [
+                "mid-century",
+                "bohemian",
+                "scandinavian"
+            ],
+            "rooms": [
+                "living-room",
+                "dining-room"
+            ],
+            "imageUrl": "https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?w=600&h=600&fit=crop",
+            "description": "Mouth-blown glass vase in warm amber hue. Catches light beautifully and works with any style.",
+            "availability": "available",
+            "tags": [
+                "glass",
+                "handmade",
+                "warm-tone",
+                "versatile"
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": "vases",
+            "name": "Vases",
+            "emoji": "🏺"
+        },
+        {
+            "id": "lighting",
+            "name": "Lighting",
+            "emoji": "💡"
+        },
+        {
+            "id": "planters",
+            "name": "Planters",
+            "emoji": "🪴"
+        },
+        {
+            "id": "wall-art",
+            "name": "Wall Art",
+            "emoji": "🖼️"
+        },
+        {
+            "id": "accessories",
+            "name": "Accessories",
+            "emoji": "✨"
+        },
+        {
+            "id": "textiles",
+            "name": "Textiles",
+            "emoji": "🧶"
+        },
+        {
+            "id": "mirrors",
+            "name": "Mirrors",
+            "emoji": "🪞"
+        },
+        {
+            "id": "rugs",
+            "name": "Rugs",
+            "emoji": "🧵"
+        }
+    ],
+    "rooms": [
+        {
+            "id": "living-room",
+            "name": "Living Room",
+            "emoji": "🛋️"
+        },
+        {
+            "id": "bedroom",
+            "name": "Bedroom",
+            "emoji": "🛏️"
+        },
+        {
+            "id": "home-office",
+            "name": "Home Office",
+            "emoji": "💼"
+        },
+        {
+            "id": "dining-room",
+            "name": "Dining Room",
+            "emoji": "🍽️"
+        }
+    ],
+    "styles": [
+        {
+            "id": "japandi",
+            "name": "Japandi",
+            "emoji": "🎋"
+        },
+        {
+            "id": "mid-century",
+            "name": "Mid-Century Modern",
+            "emoji": "🕰️"
+        },
+        {
+            "id": "scandinavian",
+            "name": "Scandinavian",
+            "emoji": "❄️"
+        },
+        {
+            "id": "bohemian",
+            "name": "Bohemian",
+            "emoji": "🌺"
+        },
+        {
+            "id": "minimalist",
+            "name": "Minimalist",
+            "emoji": "⚪"
+        },
+        {
+            "id": "modern-farmhouse",
+            "name": "Modern Farmhouse",
+            "emoji": "🏡"
+        },
+        {
+            "id": "industrial",
+            "name": "Industrial",
+            "emoji": "🏭"
+        }
+    ]
+}
