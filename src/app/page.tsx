@@ -269,6 +269,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sustainability Impact Section */}
+      <SustainabilityImpact />
+
       {/* Newsletter */}
       <section className="py-24 px-6 border-t">
         <div className="max-w-5xl mx-auto bg-accent/5 rounded-3xl p-12 md:p-20 text-center">
