@@ -22,6 +22,21 @@ interface BlogPost {
     content: string;
 }
 
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+    try {
+        const indexRes = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3002'}/data/blogs/index.json`);
+        const index = await indexRes.json();
+
+        return index.blogs.map((blog: any) => ({
+            slug: blog.slug,
+        }));
+    } catch (error) {
+        console.error("Error generating static params:", error);
+        return [];
+    }
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
     const [blog, setBlog] = useState<BlogPost | null>(null);
     const [allBlogs, setAllBlogs] = useState<BlogPost[]>([]);
