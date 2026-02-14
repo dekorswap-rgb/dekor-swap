@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Instagram, Facebook, Twitter, CheckCircle2, Loader2 } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Instagram, Facebook, Twitter, CheckCircle2, Loader2, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
+import { validateContactForm, isValidEmail, sanitizeName } from "@/lib/security";
+import { checkRateLimit, formatResetTime } from "@/lib/rateLimiter";
 
 // EmailJS Configuration - same as get-started page
 const EMAILJS_SERVICE_ID = "service_skohlrk";
@@ -31,30 +33,61 @@ export default function Contact() {
     setIsSubmitting(true);
     setError("");
 
-    // Validate required fields
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      setError("Please fill in all fields");
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
+      // Check rate limit
+      const rateLimit = checkRateLimit('CONTACT_FORM');
+      if (!rateLimit.isAllowed) {
+        setError(`Too many submissions. Please try again in ${formatResetTime(rateLimit.resetIn)}.`);
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Validate required fields
+      if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+        setError("Please fill in all fields");
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Validate subject length first
+      if (formData.subject.length < 3 || formData.subject.length > 200) {
+        setError("Subject must be between 3 and 200 characters");
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Validate and sanitize inputs (message only, not combined with subject)
+      const sanitizedData = validateContactForm({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      });
+
+      if (!sanitizedData) {
+        setError("Invalid input data. Please check your information.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Sanitize subject separately
+      const sanitizedSubject = formData.subject.substring(0, 200).trim();
+
       // Prepare email data for business (to you)
       const businessEmailData = {
-        from_name: formData.name,
-        from_email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
+        from_name: sanitizedData.name,
+        from_email: sanitizedData.email,
+        subject: sanitizedSubject,
+        message: sanitizedData.message,
         timestamp: new Date().toLocaleString(),
         form_type: "Contact Form",
       };
 
       // Prepare email data for customer confirmation
       const customerEmailData = {
-        to_name: formData.name,
-        to_email: formData.email,
-        subject: formData.subject,
-        message_preview: formData.message.substring(0, 100) + (formData.message.length > 100 ? "..." : ""),
+        to_name: sanitizedData.name,
+        to_email: sanitizedData.email,
+        subject: sanitizedSubject,
+        message_preview: sanitizedData.message.substring(0, 100) + (sanitizedData.message.length > 100 ? "..." : ""),
       };
 
       // Send inquiry email to business (dekorswap@gmail.com)
@@ -81,9 +114,15 @@ export default function Contact() {
         subject: "",
         message: "",
       });
-    } catch (err) {
+    } catch (err: any) {
       console.error("Email send error:", err);
-      setError("Failed to send message. Please try again or email us directly at dekorswap@gmail.com");
+
+      // Handle validation errors
+      if (err.message && err.message.includes('Invalid')) {
+        setError(err.message);
+      } else {
+        setError("Failed to send message. Please try again or email us directly at dekorswap@gmail.com");
+      }
     } finally {
       setIsSubmitting(false);
     }
